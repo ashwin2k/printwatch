@@ -22,7 +22,8 @@ class Redirector():
             self.io=open(self.iofile,"a")
         except:
             print("DD")
-        return self.io
+        sys.stdout=self.io
+        # return self.io
     def __exit__(self,a,b,c):
         self.io.close()
         import sys
