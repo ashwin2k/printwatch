@@ -3,23 +3,27 @@ import io
 import os
 import subprocess
 from pipalertproject.pipalert.app import runserver
+from pipalertproject.pipalert.utils import generateFileName
 import threading
 import uuid
+import os
 
-def runprocess():
-    print(subprocess.run([os.getcwd(),"pipalertproject","pipalert","manage.py"]))
 class Redirector():
+    def initialize(self):
+        threading.Thread(target=lambda: runserver(self.iofile)).start()
     def __init__(self):
         self.content=""
-        self.iofile="./pipalertproject/pipalert/demo.txt"
-        self.io=open("./pipalertproject/pipalert/demo.txt","w")
         self.original=sys.stdout
-        threading.Thread(target=lambda: runserver()).start()    
-        print("Created")
+        temp=os.path.join(os.getcwd(),"pipalertproject","pipalert","logs",generateFileName())
+        self.iofile=temp
     def __enter__(self):
+        print("Creating new - temp",self.iofile)
+        try:
+            self.io=open(self.iofile,"a")
+        except:
+            print("DD")
         return self.io
     def __exit__(self,a,b,c):
+        self.io.close()
         import sys
         sys.stdout=self.original
-    def reset(self):
-        sys.io=self.original
