@@ -1,9 +1,8 @@
 import sys
 import os
-from pipwatch.app import runserver
-from pipwatch.utils import generateFileName,makedir
+from src.printwatch.app import runserver
+from src.printwatch.utils import generateFileName,makedir
 import threading
-from multiprocessing import Process
 import os
 
 class Redirector():
