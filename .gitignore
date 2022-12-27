@@ -1,4 +1,6 @@
 __pycache__
-./pipalertproject/pipalert/__pycache__
-./pipwatch/.pypirc
+/pipalertproject/pipalert/__pycache__
+/pipwatch/.pypirc
 .pypirc
+/dist
+dist
