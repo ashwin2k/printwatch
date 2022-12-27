@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "pipwatch"
 version = "0.0.1"
@@ -7,6 +11,11 @@ authors = [
 description = "Tired of running long tasks, but want to monitor from your phone? Try PIPwatch!"
 readme = "README.md"
 requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/ashwin2k/pipwatch"
