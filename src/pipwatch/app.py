@@ -21,7 +21,7 @@ def logs(logidentifier):
     print(FILENAME)
     with open(os.path.join(os.getcwd(),"logs",FILENAME),"r") as f:
         file_contents=f.read()
-        file_contents=file_contents.decode('utf-8','ignore').encode("utf-8")
+        file_contents=file_contents
         print(file_contents)
         return render_template("home.html",content=file_contents,logidentifier=logidentifier)
 
