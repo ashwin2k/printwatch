@@ -1,0 +1,13 @@
+[project]
+name = "pipwatch"
+version = "0.0.1"
+authors = [
+  { name="Ashwin Kumar Udayakumar", email="ashwin102000@gmail.com" },
+]
+description = "Tired of running long tasks, but want to monitor from your phone? Try PIPwatch!"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/ashwin2k/pipwatch"
+"Bug Tracker" = "https://github.com/ashwin2k/pipwatch/issues"
