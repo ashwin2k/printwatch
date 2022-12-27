@@ -39,6 +39,7 @@ def search():
 @app.route("/alllogs")
 def alllogs():
     return render_template("logs.html",logidentifier=FILENAME,listcontent=os.listdir(os.path.join(os.getcwd(),"logs")))
+
 def runserver(fname):
     global FILENAME
     FILENAME=fname

@@ -1,14 +1,19 @@
 import sys
 import os
-from pipalert.app import runserver
-from pipalert.utils import generateFileName,makedir
+from pipwatch.app import runserver
+from pipwatch.utils import generateFileName,makedir
 import threading
-import uuid
+from multiprocessing import Process
 import os
 
 class Redirector():
     def initialize(self):
-        threading.Thread(target=lambda: runserver(self.relpath)).start()
+        self.server=threading.Thread(target=lambda: runserver(self.relpath))
+        self.server.start()
+    def shutdown(self):
+        self.server.terminate()
+        self.server.join()
+
     def __init__(self):
         self.content=""
         self.original=sys.stdout
