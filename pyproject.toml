@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "printwatch"
-version = "0.0.3"
+version = "0.0.5-alpha"
 authors = [
   { name="Ashwin Kumar Udayakumar", email="ashwin102000@gmail.com" },
 ]
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/ashwin2k/pipwatch"
-"Bug Tracker" = "https://github.com/ashwin2k/pipwatch/issues"
+"Homepage" = "https://github.com/ashwin2k/printwatch"
+"Bug Tracker" = "https://github.com/ashwin2k/printwatch/issues"

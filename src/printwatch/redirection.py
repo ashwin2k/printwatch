@@ -1,7 +1,7 @@
 import sys
 import os
-from src.printwatch.app import runserver
-from src.printwatch.utils import generateFileName,makedir
+from printwatch.app import runserver
+from printwatch.utils import generateFileName,makedir
 import threading
 import os
 

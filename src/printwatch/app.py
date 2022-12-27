@@ -35,6 +35,7 @@ def search():
     print(str(request.args['search']))
     return redirect(url_for("logs",logidentifier=request.args['search']+'.txt'))
 
+
 @app.route("/alllogs")
 def alllogs():
     return render_template("logs.html",logidentifier=FILENAME,listcontent=os.listdir(os.path.join(os.getcwd(),"logs")))
