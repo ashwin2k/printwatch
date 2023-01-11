@@ -24,3 +24,8 @@ with redirector:
 ```
 
 Redirected outputs will be placed in `logs/` folder. You can also use the webserver at `http://127.0.0.1:5001` to monitor the logs locally (will add support for hosted webservers soon).
+
+## Changelogs
+### `0.0.7-alpha`
+- Added chunk/lazy reading to big log files!
+- Improved UI

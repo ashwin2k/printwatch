@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "printwatch"
-version = "0.0.6-alpha"
+version = "0.0.7-alpha"
 authors = [
   { name="Ashwin Kumar Udayakumar", email="ashwin102000@gmail.com" },
 ]
-description = "Tired of running long tasks, but want to monitor from your phone? Try PIPwatch!"
+description = "Tired of running long tasks? Try Printwatch to monitor it from local network!"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
