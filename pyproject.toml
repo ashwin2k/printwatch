@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "printwatch"
-version = "0.0.5-alpha"
+version = "0.0.6-alpha"
 authors = [
   { name="Ashwin Kumar Udayakumar", email="ashwin102000@gmail.com" },
 ]

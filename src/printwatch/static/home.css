@@ -1,0 +1,55 @@
+.pagination{
+    --bs-pagination-color: white;
+    --bs-pagination-bg: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    --bs-pagination-border-color:black
+} 
+
+
+.page-link:hover{
+    --bs-pagination-hover-bg: rgb(43, 43, 43);
+    --bs-pagination-hover-border-color:black;
+    --bs-pagination-hover-color:white;
+
+}
+.page-item:hover{
+    --bs-pagination-hover-bg: rgb(43, 43, 43);
+    --bs-pagination-hover-border-color:black;
+    --bs-pagination-hover-color:white;
+
+}
+.bottombar{
+    height: 60px;
+}
+.selectpage{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    margin-right: 5px;
+}
+
+.goto{
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+}
+.goto:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+}
+#navbarSupportedContent{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.gobutton{
+    border-color: black;
+    color: black;
+}
+.gobutton:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+
+}

@@ -1,5 +1,5 @@
 # Printwatch
-Tired of running long tasks, but want to monitor from your phone? Try ***PRINTwatch***!
+Tired of running long tasks? Try ***PRINTwatch***!
 
 ![PyPI](https://img.shields.io/pypi/v/printwatch) ![PyPI - License](https://img.shields.io/pypi/l/printwatch)
 ## Alpha version is now live on pip! 
@@ -23,4 +23,4 @@ with redirector:
     print("Redirected output")
 ```
 
-Redirected outputs will be placed in `logs/` folder. 
+Redirected outputs will be placed in `logs/` folder. You can also use the webserver at `http://127.0.0.1:5001` to monitor the logs locally (will add support for hosted webservers soon).

@@ -1,13 +1,13 @@
 import sys
 import os
-from printwatch.app import runserver
-from printwatch.utils import generateFileName,makedir
+from .app import runserver
+from .utils import generateFileName,makedir
 import threading
 import os
 
 class Redirector():
     def initialize(self):
-        self.server=threading.Thread(target=lambda: runserver(self.relpath))
+        self.server=threading.Thread(target=lambda: runserver(self.relpath,self.pagesize))
         self.server.start()
     def shutdown(self):
         self.server.terminate()
@@ -20,13 +20,14 @@ class Redirector():
         temp=os.path.join(os.getcwd(),"logs",fname)
         self.relpath=os.path.join("logs",fname)
         self.iofile=temp
-    def __init__(self,identifier):
+    def __init__(self,identifier,pagesize=8192):
         self.content=""
         self.original=sys.stdout
         self.currentLog=identifier+".txt"
         temp=os.path.join(os.getcwd(),"logs",self.currentLog)
         self.relpath=os.path.join("logs",self.currentLog)
         self.iofile=temp
+        self.pagesize=pagesize
     def __enter__(self):
         makedir("logs")
         print("Creating new - temp",self.iofile)
